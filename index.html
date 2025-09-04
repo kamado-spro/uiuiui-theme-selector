@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Mockup for IUIUIU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="ui-container">
+        <div class="sidebar">
+            <div class="sidebar-btn active" title="Home">🏠</div>
+            <div class="sidebar-settings-btn" title="Settings">⚙️</div>
+            <div class="sidebar-btn" title="Menu">☰</div>
+        </div>
+
+        <div class="left-panel">
+            <div class="chart-container">
+                <div class="legend">
+                    <span>ml/s</span>
+                    <span>bar</span>
+                </div>
+                <div class="chart">
+                    <div class="chart-line flow-line"></div>
+                    <div class="chart-line pressure-line"></div>
+                </div>
+                <div class="y-axis">
+                    <span>100</span>
+                    <span>80</span>
+                    <span>60</span>
+                    <span>40</span>
+                    <span>20</span>
+                    <span>0</span>
+                </div>
+                <div class="x-axis">
+                    <span>0</span>
+                    <span>30</span>
+                    <span>60</span>
+                </div>
+            </div>
+
+            <div class="icon-buttons">
+                <div class="icon-btn">✏</div>
+                <div class="icon-btn">💾</div>
+            </div>
+
+            <div class="controls-grid">
+                <div class="control-button">IUIUIU Classic</div>
+                <div class="control-button">Adaptive</div>
+                <div class="control-button active">Londinium</div>
+                <div class="control-button">Filter 2.1</div>
+                <div class="control-button">Blooming espresso</div>
+                <div class="control-button">Extractamundo Dos!</div>
+                <div class="control-button">Zer0</div>
+                <div class="control-button">Low High Low v1.3</div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="temperature-display">
+                <div class="temperature-circle">
+                    <div class="temperature-main">94.4°C</div>
+                    <div class="temperature-target">93</div>
+                    <div class="pressure-gauge">0.1</div>
+                </div>
+            </div>
+
+            <div class="timer">00h:10m</div>
+
+            <div class="shot-weight">
+                <div class="weight-header">Shot Weight (g)</div>
+                <div class="weight-controls">
+                    <div class="weight-buttons">
+                        <button class="weight-btn">−</button>
+                        <button class="weight-btn">+</button>
+                    </div>
+                    <div class="weight-value">45.0</div>
+                </div>
+                <div class="weight-display">0.0g</div>
+                <div class="action-buttons">
+                    <button class="action-btn">Flush</button>
+                    <button class="action-btn">Descale</button>
+                </div>
+            </div>
+
+            <div class="tank-indicator">
+                <div class="tank-label">Tank Level</div>
+            </div>
+        </div>
+        <div></div>
+        <div id="color-buttons"></div>
+
+        <div>
+            <div class="theme-selector">
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggleDarkMode" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span class="toggle-text" id="toggleDarkModeText"></span>
+                    <div>&nbsp;</div>
+
+                    <label class="switch">
+                        <input type="checkbox" id="toggleColorSelector">
+                        <span class="slider-themed"></span>
+                    </label>
+                    <span>Apply color to</span>
+                    <span class="toggle-text" id="toggleColorText"></span>
+                    <div>&nbsp;</div>
+                </div>
+            </div>
+
+            <span>Current Selections<BR></span>
+            <span>Theme:</span>
+            <span id="selectedPrimaryColor"></span>
+            <span>&nbsp;</span>
+            <span><BR>Accent:</span>
+            <span id="selectedSecondaryColor"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
