@@ -242,9 +242,11 @@ body {
     width: 20px;
     height: 100%;
     justify-content: flex-end;
-    background: linear-gradient(to top,
-            var(--primary-color) 0%,
-            var(--secondary-color) 100%);
+    background: linear-gradient(
+        to top,
+        var(--secondary-color) 0%,
+        var(--primary-color) 100%
+    );
     border-radius: 10px;
 }
 .tank-label {
