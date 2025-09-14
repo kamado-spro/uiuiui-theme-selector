@@ -322,6 +322,7 @@ body {
     border-radius: 10px;
     word-break: break-word;
     text-align: center;
+    cursor: pointer;
 }
 
 /* Theme variations */

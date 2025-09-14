@@ -174,6 +174,29 @@ document.querySelectorAll('.weight-display').forEach(btn => {
     });
 });
 
+// Color randomization
+function getRandomColor() {
+    return palette[Math.floor(Math.random() * palette.length)];
+}
+
+// Attach events to action buttons
+const actionBtns = document.querySelectorAll('.action-btn');
+if (actionBtns.length >= 2) {
+    // First button → randomize primary
+    actionBtns[0].addEventListener('click', () => {
+        const randomColor = getRandomColor();
+        handlePrimaryColor(randomColor);
+    });
+
+    // Second button → randomize secondary
+    actionBtns[1].addEventListener('click', () => {
+        const randomColor = getRandomColor();
+        handleSecondaryColor(randomColor);
+    });
+}
+
+
+
 // Simulate temperature fluctuation
 setInterval(() => {
     const tempEl = document.querySelector('.temp-main');
