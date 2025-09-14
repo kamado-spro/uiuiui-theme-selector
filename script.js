@@ -149,6 +149,31 @@ document.querySelectorAll('.weight-btn').forEach(btn => {
     });
 });
 
+
+// Swap Color
+document.querySelectorAll('.weight-display').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        // get current variable values
+        const root = document.documentElement;
+        const styles = getComputedStyle(root);
+
+        const primary = styles.getPropertyValue('--primary-color').trim();
+        const secondary = styles.getPropertyValue('--secondary-color').trim();
+
+        // swap them
+        root.style.setProperty('--primary-color', secondary);
+        root.style.setProperty('--secondary-color', primary);
+
+        // also update text content
+        const selectedPrimary = document.getElementById('selectedPrimaryColor');
+        const selectedSecondary = document.getElementById('selectedSecondaryColor');
+
+        const tempText = selectedPrimary.textContent;
+        selectedPrimary.textContent = selectedSecondary.textContent;
+        selectedSecondary.textContent = tempText;
+    });
+});
+
 // Simulate temperature fluctuation
 setInterval(() => {
     const tempEl = document.querySelector('.temp-main');
