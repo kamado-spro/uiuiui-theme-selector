@@ -44,7 +44,26 @@ const palette = [
     { name: "Dark Pink", hex: "#C71585" },
     { name: "Light Aqua", hex: "#8cc1d6" },
     { name: "Dark Teal", hex: "#073e55" },
-    { name: "Dark magenta", hex: "#4d192c" }
+    { name: "Dark magenta", hex: "#4d192c" },
+    { name: "Red", hex: "#F44336" },
+    { name: "Pink", hex: "#E91E63" },
+    { name: "Purple", hex: "#9C27B0" },
+    { name: "Deep Purple", hex: "#673AB7" },
+    { name: "Indigo", hex: "#3F51B5" },
+    { name: "Blue", hex: "#2196F3" },
+    { name: "Light Blue", hex: "#03A9F4" },
+    { name: "Cyan", hex: "#00BCD4" },
+    { name: "Teal", hex: "#009688" },
+    { name: "Green", hex: "#4CAF50" },
+    { name: "Light Green", hex: "#8BC34A" },
+    { name: "Lime", hex: "#CDDC39" },
+    { name: "Yellow", hex: "#FFEB3B" },
+    { name: "Amber", hex: "#FFC107" },
+    { name: "Orange", hex: "#FF9800" },
+    { name: "Deep Orange", hex: "#FF5722" },
+    { name: "Brown", hex: "#795548" },
+    { name: "Blue Grey", hex: "#607D8B" },
+    { name: "Grey", hex: "#9E9E9E" }
 ];
 
 /*
@@ -98,8 +117,31 @@ https://discord.com/channels/890339612441063494/1284530105816711168/137504071830
 #define COLOR_IUIUIU_PASTEL_AQUA     lv_color_hex(0x8cc1d6) // Light Aqua 
 #define COLOR_IUIUIU_DARK_TEAL       lv_color_hex(0x073e55) // Dark Teal 
 #define COLOR_IUIUIU_DARK_MAGENTA    lv_color_hex(0x4d192c) // Dark magenta 
-*/
 
+and from
+https://discord.com/channels/890339612441063494/1416935130529923276/1416944948162597066
+```
+RED          0xF44336
+PINK         0xE91E63
+PURPLE       0x9C27B0
+DEEP_PURPLE  0x673AB7
+INDIGO       0x3F51B5
+BLUE         0x2196F3
+LIGHT_BLUE   0x03A9F4
+CYAN         0x00BCD4
+TEAL         0x009688
+GREEN        0x4CAF50
+LIGHT_GREEN  0x8BC34A
+LIME         0xCDDC39
+YELLOW       0xFFEB3B
+AMBER        0xFFC107
+ORANGE       0xFF9800
+DEEP_ORANGE  0xFF5722
+BROWN        0x795548
+BLUE_GREY    0x607D8B
+GREY         0x9E9E9E
+```
+*/
 
 window.addEventListener('DOMContentLoaded', () => {
     handlePrimaryColor(palette[0]);
